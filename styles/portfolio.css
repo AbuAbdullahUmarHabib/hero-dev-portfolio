@@ -45,10 +45,18 @@
   color: #181818;
   margin-bottom: 30px;
 }
+.description {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #757575;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
 /* Main styles */
 
 header {
-  /* background-color: #fff8f3; */
   background: url("../images/header_bg.png"), url("../images/developer.png"),
     #fff8f3;
   background-position: bottom right, top left;
@@ -76,7 +84,6 @@ nav .menu a {
 }
 
 #hero {
-  /* border: 1px solid rebeccapurple; */
   margin: 46px 38px 0px 230px;
   display: flex;
   justify-content: space-between;
@@ -93,19 +100,11 @@ nav .menu a {
   color: #181818;
   margin-bottom: 20px;
 }
-#hero .hero-content p {
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 30px;
-  color: #757575;
-  line-height: 30px;
-}
 #hero .hero-image img {
   max-width: 585px;
   vertical-align: middle;
 }
 #about {
-  /* text-align: center; */
   padding: 130px 230px;
 }
 .about-container {
@@ -113,17 +112,40 @@ nav .menu a {
   padding: 131px 155px;
   max-width: 1140px;
   background-color: #fff8f3;
-}
-#about .about-heading p {
-  display: flex;
-  gap: 50px;
-  font-size: 18px;
-  font-weight: normal;
-  color: #757575;
-  line-height: 30px;
-  margin-bottom: 30px;
+  border-radius: 10px;
 }
 #about .about-info {
   display: flex;
   justify-content: space-between;
+}
+#services {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.services-container {
+  text-align: center;
+  padding: 131px 155px;
+}
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.service-cards .card {
+  background: #fff;
+  padding: 33px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+.service-cards .card img {
+  margin-bottom: 30px;
+  height: 44px;
+  width: 44px;
+}
+
+.service-cards .card .card-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #181818;
+  margin-bottom: 20px;
 }
